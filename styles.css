@@ -37,10 +37,7 @@ body {
     font-size: 1.5rem ;
     font-weight: 400;
 }
-/* .poop {
-    width: max-content;
 
-} */
 .container--light {
     font-weight: 200;
 }
@@ -53,24 +50,38 @@ header {
     
 }
 .card {
+    border-radius: .5rem;
+    border-top: 3px solid;
     box-shadow: 2px 24px 41px -11px rgba(76,78,97,0.25);
     margin-bottom: 2.5rem;
-    padding: 4rem;
+    padding: 2.3rem 3rem 2.7rem;
 }
 .card__heading {
     font-size: 2rem;
 }
 .card__paragraph {
     font-size: 1.2rem;
+    margin-bottom: 3rem;
 }
 .card__icon {
     display: block;
     margin-left: auto;
+    max-width: 5.3rem;
+}
+.card--supervisor {
+    border-color: var(--Cyan);
+}
+.card--team {
+    border-color: var(--Red);
+}
+.card--karma {
+    border-color: var(--Orange);
+}
+.card--calculator {
+    border-color: var(--Blue);
 }
 .card__paragraph, .container__h2 {
     color: var(--GrayishBlue)
 }
 
-.boldH1 {
-    display: block;
-}
+
