@@ -91,25 +91,33 @@ header {
 /* Media Queries */
 @media screen and (min-width: 969px){
     .poop {
-        margin-inline: auto;
+        
         display: grid;
-        grid-template-columns: 35rem 35rem 35rem;
-        grid-template-rows: 1fr 1fr;
+        gap: 2.5rem 3rem;
+        grid-template-columns: repeat(3,minmax(auto, 35rem));
+        /* grid-template-rows: 1fr 1fr; */
         grid-template-areas: 
         "card1 card2 card4"
         "card1 card3 card4"
-
-
-        
-        
         ;
-        
-
+    }
+    .container {
+        max-width: 111rem;
+    }
+    header {
+        width: 45%;
+        margin-inline: auto;
     }
     .card {
         /* width: 35rem; */
         margin: 0;
         align-self: center;
+    }
+    .card__paragraph {
+        margin-bottom: 4rem;
+    }
+    .card__icon {
+        max-width: 6rem;
     }
     #card1 {
         grid-area: card1;
