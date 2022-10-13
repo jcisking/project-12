@@ -91,10 +91,9 @@ header {
 /* Media Queries */
 @media screen and (min-width: 969px){
     .poop {
-        
         display: grid;
-        gap: 2.5rem 3rem;
-        grid-template-columns: repeat(3,minmax(auto, 35rem));
+        gap: 2.3rem 2.7rem;
+        grid-template-columns: minmax(auto, 35rem) minmax(194px, 35rem) minmax(auto, 35rem);
         /* grid-template-rows: 1fr 1fr; */
         grid-template-areas: 
         "card1 card2 card4"
@@ -104,8 +103,11 @@ header {
     .container {
         max-width: 111rem;
     }
+    .container__h1 {
+        font-size: 3.3rem;
+    }
     header {
-        width: 45%;
+        width: 499.5px;
         margin-inline: auto;
     }
     .card {
@@ -121,7 +123,6 @@ header {
     }
     #card1 {
         grid-area: card1;
-        /* align-self: center; */
         
     }
     #card2 {
